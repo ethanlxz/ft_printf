@@ -19,9 +19,9 @@ int	ft_putchar(int c)
 	return (1);
 }
 
-int ft_putstr(const char *s)
+int	ft_putstr(const char *s)
 {
-    int index;
+    int	index;
 
     if (!s)
 		return ;
@@ -32,4 +32,16 @@ int ft_putstr(const char *s)
 		index++;
 	}
     return (index);
+}
+
+int	ft_printnbr(int n)
+{
+	int		len;
+	char	*num;
+
+	len = 0;
+	num = ft_itoa(n);
+	len = ft_putstr(num);
+	free (num);
+	return (num);
 }

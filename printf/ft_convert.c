@@ -13,9 +13,9 @@
 #include "libftprintf.h"
 #include "libft.h"
 
-int ft_convert(va_list args, const char format)
+int	ft_convert(va_list args, const char format)
 {
-    int length;
+    int	length;
 
     length = 0;
     if (format == 'c')
@@ -24,10 +24,8 @@ int ft_convert(va_list args, const char format)
         length += ft_putstr(va_arg(args,char));
     else if (format == 'p')
        length += 
-    else if (format == 'd')
-        length +=
-    else if (format == 'i')
-        length +=
+    else if (format == 'd' || format == 'i')
+        length += ft_printnbr(va_arg(args,int));
     else if (format == 'u')
         length +=
     else if (format == 'x')
