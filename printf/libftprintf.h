@@ -35,4 +35,6 @@ int		ft_printnbr(int n);
 
 int		ft_convert(va_list args, const char format);
 
+int		ft_print_unsigned(unsigned int n);
+
 #endif

@@ -26,7 +26,7 @@ static int	getlen(int n)
     return (len);
 }
 
-char	*ft_uitoa(unsigned int n)
+static char	*ft_uitoa(unsigned int n)
 {
 	int		len;
 	char	*s;

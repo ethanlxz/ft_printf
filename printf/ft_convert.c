@@ -27,7 +27,7 @@ int	ft_convert(va_list args, const char format)
     else if (format == 'd' || format == 'i')
         length += ft_printnbr(va_arg(args,int));
     else if (format == 'u')
-        length +=
+        length += ft_print_unsigned(va_arg(args, unsigned int));
     else if (format == 'x')
         length +=
     else if (format == 'X')
