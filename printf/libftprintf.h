@@ -27,4 +27,8 @@ typedef struct s_format
 	size_t		len;
 }			t_format;
 
+int		ft_putchar(int c);
+int		ft_putstr(const char *s);
+int 	ft_convert(va_list args, const char format);
+
 #endif
