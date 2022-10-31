@@ -28,7 +28,7 @@ int	ft_convert(va_list args, const char format)
     else if (format == 'u')
         length += ft_print_unsigned(va_arg(args, unsigned int));
     else if (format == 'x' || format == 'X')
-        length +=
+        length += ft_print_hex(va_arg(args, unsigned int), format);
     else if (format == '%')
         length += ft_putchar('%');
 
